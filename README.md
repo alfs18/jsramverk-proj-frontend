@@ -32,7 +32,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### Redovisningstext
+## Redovisningstext
 Till frontenden användes ramverket Vue, då det verkade enklast. Detta eftersom jag då kunde återanvända en hel del från föregående kursmoment.
 
 Hade en del problem med hur jag skulle göra för att anpassa sidan till olika skärmar. Visste inte riktigt hur jag skulle göra med tabellerna för att få dem att fungera för t.ex. en mobiltelefon - i slutändan gjorde jag mer av en informationsruta till de olika aktierna. Dessa informationsrutor visas endast vid en viss skärmstorlek, vilket regleras genom css.
