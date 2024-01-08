@@ -40,3 +40,5 @@ Hade en del problem med hur jag skulle göra för att anpassa sidan till olika s
 För att inte låta en användare ta del av alla sidorna (och för att slippa att backenden kraschar när den försöker hämta något okänt) så användes v-if="token". Detta gör att ett visst innehåll på sidan inte laddas om token inte finns, dvs. när ingen är inloggad. Det som istället visas är en text om att användaren behöver logga in för att ta del av innehållet.
 
 Användaren kan lägga till hur mycket pengar den vill, men jag gjorde en spärr så att man inte kan köpa för mer än sina tillagda tillgångar.
+
+Till post-requesterna användes axios, då jag tyckte det fungerade bra i de tidigare kursmomenten.
