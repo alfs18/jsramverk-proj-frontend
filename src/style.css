@@ -1,0 +1,274 @@
+/* @import './assets/base.css'; */
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #036846;
+  transition: 0.4s;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: serif;
+    font-size: 13pt;
+}
+
+.left-side {
+    float: left;
+    border: 2px solid black;
+    width: 260px;
+    margin-right: 2%;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    /* background-color: hsla(160, 100%, 37%, 0.2); */
+    /* border: 2px solid #1e9970; */
+    background-color: #036846;
+    color: hsla(160, 100%, 37%, 1);
+  }
+}
+
+@media (min-width: 1685px) {
+    .left-side {
+        float: left;
+        border: 2px solid black;
+        width: 30%;
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  section {
+      width: 40vw;
+  }
+
+  .all-content {
+      width: 40vw;
+  }
+}
+
+@media (min-width: 768px) {
+    .input-field {
+        /* vw = viewport width */
+        width: 30vw;
+    }
+}
+
+nav {
+    padding: 2em;
+    text-align: center;
+    background-color: black;
+}
+
+nav a {
+    padding: 1.5em;
+}
+
+nav .router-link-active {
+    background-color: black;
+    color: hsla(160, 100%, 37%, 1);
+    border-bottom: 5px solid #1e9970;
+}
+
+.navbar {
+    display: grid;
+    place-items: center;
+}
+
+/* Links inside the navbar */
+.nav a {
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  padding: 14px 1.5em;
+}
+
+section {
+    padding-top: 2em;
+    padding-left: 2em;
+    display: grid;
+    place-content: center;
+}
+
+p, a {
+    font-size: 18px;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+    color: #036846;
+    text-align: center;
+}
+
+table {
+    background-color: #1e9970;
+    border-collapse: collapse;
+}
+
+.all-objects:nth-child(even) {
+  /* background-color: #C0ECEC; */
+  background-color: #D6EEEE;
+}
+
+.all-objects:hover {
+    background-color: hsl(160, 32.5%, 69.2%);
+}
+
+.small-screen {
+    display: none;
+}
+
+th {
+    background-color: #1e9970;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+}
+
+th, tr {
+    font-size: 14pt;
+}
+
+input[type='submit'] {
+    padding: 0.5em;
+    font-size: 12pt;
+}
+
+/* input[type='submit']:hover {
+    background-color: hsla(160, 100%, 37%, 1);
+} */
+
+@media (max-width: 870px) {
+    table .hide {
+        display: none;
+    }
+
+    .left-side {
+        float: none;
+        border: 2px solid black;
+        width: 50%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 670px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: block;
+    padding: 0 2rem;
+    box-sizing: content-box;
+  }
+
+  section {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 2em;
+      min-height: 50vw;
+  }
+
+  nav {
+      /* padding: 2em; */
+      text-align: center;
+      background-color: black;
+      display: table-caption;
+  }
+
+  /* nav a {
+      padding: 1.5em;
+  } */
+
+  nav .router-link-active {
+      background-color: black;
+      color: hsla(160, 100%, 37%, 1);
+  }
+
+  .navbar {
+      display: table-caption;
+  }
+
+  .input-birthday {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+      padding: 0.4rem 1rem;
+      font-size: 1.25rem;
+  }
+
+  input[type='text'] {
+      width: 100%;
+      padding: 0.4rem 1rem;
+      font-size: 1.25rem;
+  }
+
+  .left-side {
+      float: none;
+      width: 90%;
+      border: 2px solid black;
+  }
+
+  .all-content {
+      width: auto;
+  }
+
+  table {
+      display: none;
+  }
+
+  .small-screen {
+      display: block;
+  }
+
+  .small-screen .all-objects {
+      border: 2px solid black;
+      padding: 1em;
+  }
+
+  tr {
+      font-size: 12pt;
+  }
+
+  td button {
+      padding: 1em;
+  }
+
+  table .hide {
+      display: none;
+  }
+
+  /* .first-line {
+      width: 65%;
+  }
+
+  .second-line {
+      width: 20%;
+  } */
+}
